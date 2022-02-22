@@ -8,8 +8,8 @@
         <tr>
             <td><label>Loại hàng :</label></td>
             <td><select name="category_id" id="">
-                    <?php foreach ($categories as $category ):?>
-                        <option value="<?php echo $category->id ?>"><?php echo $category->ctname?></option>
+                    <?php foreach ($categoriess as $category ):?>
+                        <option value="<?php echo $category->id ?>"><?php echo $category->name?></option>
                     <?php endforeach; ?>
                 </select></td>
         </tr>

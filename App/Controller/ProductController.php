@@ -32,6 +32,7 @@ class ProductController
         if ($_SERVER["REQUEST_METHOD"] == "GET"){
             $category = new CategoryModel();
             $categories = $category->showAll();
+            $categoriess = $category->getAll();
 //            var_dump($categories);
 //            die();
             include "App/View/products/create.php";
