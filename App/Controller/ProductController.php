@@ -48,6 +48,7 @@ class ProductController
         if ($_SERVER["REQUEST_METHOD"] == "GET"){
             $category = new CategoryModel();
             $categories = $category->showAll();
+            $categoriess = $category->getAll();
            $products = $this->productModel->showById($_GET['id']);
             include "App/View/products/edit.php";
         }
